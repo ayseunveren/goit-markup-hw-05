@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/reset.css">
+        <!-- Fontlarım -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <title>Contact</title>
+    </head>
+    <body>
+        <div class="fullpage-contact">
+            <header class="header">
+            <div class="container cont-header">
+                <nav class="nav">
+                    <a class="logo-header" href="#">Web<span class="logo-header-span">Studio</span></a>
+                    <ul class="flex-container-nav">
+                        <li class="list-nav">
+                            <a class="a-nav a-nav-studio" hef="./index.html">Studio</a>
+                        </li>
+                        <li class="list-nav">
+                            <a class="a-nav" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="list-nav">
+                            <a class="a-nav" href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address>
+                    <ul class="flex-container-address">
+                        <li class="list-address">
+                            <a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="list-address">
+                            <a class="address-link" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            </header> 
+    
+            <main>
+                <!--Arkada kalacak kısım-->
+                <section class="section1" id="studio">
+                <div class="container cont-1">
+                    <h1 class="headline1">Effective Solutions </br> for Your Business</h1>
+                    <button class="button" type="button">Order Service</button>
+                </div>
+                </section>
+                <!--Önde kalacak form-->
+                <div class="overlay-form">
+                    <div class="form-div">
+                        <button class="close-button">
+                            <svg class="close-icon">
+                                <use href="./images/icon-close.svg#icon-close"></use> 
+                            </svg> 
+                        </button>
+                        <h2 class="form-title">Leave your contacts and we will call you back</h2>
+                        <form class="form">
+                            <div class="label-input-div">
+                                <label class="form-label" for="name">Name</label>
+                                <div class="input-div">
+                                    <svg class="icons icon-name">
+                                        <use href="./images/form-inputs.svg#icon-Vector"></use>
+                                    </svg>
+                                    <input id="name" type="text" class="name-input"/> 
+                                </div>
+                            </div>
+                            <div class="label-input-div">
+                                <label class="form-label" for="phone">Phone</label>
+                                <div class="input-div">
+                                    <svg class="icons icon-phone">
+                                        <use href="./images/form-inputs.svg#icon-Vector-1"></use>
+                                    </svg>
+                                    <input id="phone" type="tel" class="phone-input"/>
+                                </div>
+                            </div>
+                            <div class="label-input-div">
+                                <label class="form-label" for="email">Email</label>
+                                <div class="input-div">
+                                    <svg class="icons icon-email">
+                                        <use href="./images/form-inputs.svg#icon-Vector-2"></use>
+                                    </svg>
+                                    <input id="email" type="email" class="email-input"/>
+                                </div>
+                            </div>
+                            <div class="textarea-div">
+                                <label class="form-label" for="comment">Comment</label>                            
+                                <textarea id="comment" name="comment" class="comment" autocomplete="off" placeholder="Text input"></textarea>                            
+                            </div>
+                            <div class="checkbox-div">
+                                <input type="checkbox" name="policy" value="policy" class="checkbox-policy"></input> 
+                                <p class="text-policy">I accept the terms and conditions of the
+                                <span>
+                                <a class="link-policy" href="#">Privacy Policy</a>
+                                </span>
+                                </p>    
+                            </div>
+                            <button class="button-form" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+    
+        </body>
+        </div>
+</html>

@@ -1,0 +1,595 @@
+:root
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    background-color:#ffffff;
+    color:rgba(46, 47, 66, 1);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    margin: 0;
+    
+}
+
+img {
+    margin: 0;
+}
+
+/* bağlantı, buton ve img */
+
+header a {
+    text-decoration: none;
+}
+.button {
+    cursor: pointer;
+    background: rgba(77, 90, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 4%;
+    font-weight: 500;
+    text-align: center;
+    width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+}
+.button:hover {
+    background: rgba(64, 75, 191, 1);
+}
+.a-nav {
+    color:rgba(46, 47, 66, 1);
+    font-weight: 500;
+    line-height: 1.5;
+}
+.a-nav:hover, .nav:active, nav:focus {
+    color: rgba(64, 75, 191, 1);
+}
+
+.a-nav-studio {
+    position: relative;
+}
+
+.a-nav-studio::after {
+    position: absolute;
+    content:"";
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(64, 75, 191, 1);
+    display: block;
+}
+
+.address-link {
+    color:rgba(67, 68, 85, 1);
+}
+.address-link:hover, .address-link:focus {
+    color:rgba(64, 75, 191, 1);
+}
+.logo-header, .logo-footer {
+    color:rgba(77, 90, 229, 1);
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo-header-span {
+    color:rgba(46, 47, 66, 1);
+}
+.logo-footer-span {
+    color:rgba(244, 244, 253, 1);
+}
+
+.cont-3 img {
+    display: block;
+}
+
+/* h1, h2, h3 ve p */
+.headline1 {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 2%;
+    line-height: 1.07;
+    text-align: center;
+}
+.headline2 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2%;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.headline3-studio, .headline3-ourteam, .headline3-ourportfolio {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
+    line-height: 1.2;
+    color: rgba(46, 47, 66, 1);
+}
+
+
+.text-portfolio, .text-ourteam, .text-ourportfolio {
+    color: rgba(67, 68, 85, 1);
+}
+
+.text-footer {
+    color:rgba(231, 233, 252, 1);
+    margin-top: 16px;
+}
+
+.text-footer2 {
+    color: white;
+    margin-bottom: 16px; 
+}
+
+.text-ourteam {
+    margin: 8px 0;
+}
+
+/* sectionlar header footer */
+
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    
+}
+
+.section1 {
+    background-color: rgba(46, 47, 66, 1);
+    background-image: url("../images/effectiveimage.jpg");
+    background-size: cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+
+.section1::after {
+    content: "";
+    background-image: url("../images/dark.svg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.section3 {
+    background-color: rgba(244, 244, 253, 1);
+}
+.footer {
+    background-color: rgba(46, 47, 66, 1);
+}
+
+/* ul, li, div */
+
+.section2 ul, .section3 ul, .section4 ul, .header ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+}
+.cont-header {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.flex-container-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 76px;
+}
+
+.flex-container-address {
+    display: flex;
+    gap: 40px;
+}
+
+.cont-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.cont-2 {
+    padding: 120px 0;
+}
+
+.flex-container2 {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.container-portfolio {
+    width: 264px;
+    height: 104px;
+}
+
+.list-portfolio {
+    width: calc((100% - 24px) / 4 );
+}
+
+.cont-3 {
+    padding: 120px 0;
+}
+
+.flex-container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.container-ourteam {
+    background-color: #ffffff;
+    padding: 32px 0;
+    text-align: center;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.list-ourteam {
+    width: calc((100% - 96px) / 4);
+}
+
+.list-ourteam {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.container-socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 24px;
+    margin: 8px 16px 0;
+    padding: 0;
+
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-portfolio {
+    width: 264px;
+    height: 112px;
+}
+
+.cont-4 {
+    padding: 120px 0;
+}
+
+.flex-container4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.container-ourportfolio {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: rgba(231, 233, 252, 1);
+    padding: 32px 16px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.list-portfolio {
+    width: calc ((100% - 48px) / 3);
+}
+
+
+.cont-footer {
+    padding: 100px 0;
+    display: flex;
+    gap: 120px;
+
+}
+
+.container-footermedia {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.list-ourportfolio:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.container-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    padding: 40px 32px 164px;
+    background-color: rgba(77, 90, 229, 1);
+    color: rgba(244, 244, 253, 1);
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-ourportfolio:hover .overlay-text {
+    transform: translateY(0);
+}
+
+.icon-ourteam, .footer-icon {
+    fill: rgba(77, 90, 229, 1);
+}
+
+.link-socialmedia:hover .icon-ourteam {
+    fill: rgba(64, 75, 191, 1);
+}
+
+.footer-link:hover .footer-icon {
+    fill: rgba(49, 208, 170, 1);
+}
+
+.footer-label {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.email-div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-input {
+    background-color: rgba(46, 47, 66, 1);
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
+}
+.footer-input::placeholder {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-button {
+    background-color: rgba(77, 90, 229, 1);
+    color: #ffffff;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    align-self: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 16px 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.frame3-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.subscribe-email-div {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.fullpage-contact {
+    position: relative;
+    background-color: rgba(46, 47, 66, 0.4);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.overlay-form {
+    position: fixed;
+    top: 80px;
+    left: 516px;
+    width: 408px;
+    height: 584px;
+    background-color: rgba(252, 252, 252, 1);
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+                0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    
+}
+
+.form-div {
+    position: relative;
+    padding: 0 24px 24px; /* 72px 24px 24px*/
+    
+}
+.close-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    background-color: rgba(231, 233, 252, 1);
+    cursor: pointer;
+    
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-icon {
+    width: 8px;
+    height: 8px;
+}
+.form-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(46, 47, 66, 1);
+    padding-top: 72px;
+    margin-bottom: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;    
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(142, 143, 153, 1);
+    letter-spacing: 0.04em;
+    margin-bottom: 4px; /* */
+}
+
+.icons {
+    width: 12px;
+    height: 12px;
+    
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgba(46, 47, 66, 1);
+}
+
+.input-div {
+    position: relative;
+}
+
+.input-div:active {
+    border: rgba(77, 90, 229, 1);
+}
+
+.input-div:active .icons {
+    fill: rgba(77, 90, 229, 1);
+}
+
+.textarea-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment {
+    resize: none;
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.comment::placeholder {
+    font-size: 12px;
+    color: rgba(46, 47, 66, 0.4);
+    letter-spacing: 0.04em;
+    line-height: 14px;
+}
+
+.checkbox-div {
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.checkbox-div input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px rgba(46, 47, 66, 0.4);
+    cursor: pointer;
+} 
+
+.text-policy {
+    color: rgba(142, 143, 153, 1);
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+}
+
+.button-form {
+    background-color: rgba(77, 90, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 24px;
+    margin: 24px auto;
+    border: none;
+}
+
+.input-div input {
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+}
+
+.textarea-div .form-label {
+    margin-top: 6px;
+}
