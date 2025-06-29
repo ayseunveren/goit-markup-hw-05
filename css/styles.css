@@ -450,8 +450,12 @@ header a {
     
 }*/
 
+.overlay-form {
+    background-color: #ffffff;
+}
+
 .back-drop {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -461,6 +465,7 @@ header a {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: RGBA(0,0,0,0.5);
 }
 
 .form-div {
