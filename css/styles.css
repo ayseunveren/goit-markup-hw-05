@@ -435,7 +435,7 @@ header a {
     overflow: hidden;
 }
 
-.overlay-form {
+/*.overlay-form {
     position: absolute;
     top: 80px;
     left: 516px;
@@ -448,6 +448,19 @@ header a {
                 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     z-index: 2;
     
+}*/
+
+.back-drop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-div {
