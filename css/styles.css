@@ -625,7 +625,9 @@ form {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.04em;
+    
 }
+
 
 .button-form {
     background-color: rgba(77, 90, 229, 1);
@@ -637,6 +639,11 @@ form {
     margin-top: 24px;
     margin: 24px auto;
     border: none;
+    cursor: pointer;
+}
+
+.button-form:hover {
+    background-color: rgba(64, 75, 191, 1)
 }
 
 .input-div input {
@@ -645,6 +652,10 @@ form {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
+}
+
+.phone-input:active .icon-phone {
+    fill: rgba(77, 90, 229, 1);
 }
 
 .textarea-div .form-label {
