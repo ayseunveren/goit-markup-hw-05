@@ -550,11 +550,7 @@ form {
 }
 
 .input-div:active {
-    border: rgba(77, 90, 229, 1);
-}
-
-.input-div:active .icons {
-    fill: rgba(77, 90, 229, 1);
+    color: rgba(77, 90, 229, 1)
 }
 
 .input-div {
@@ -654,7 +650,7 @@ form {
     padding-left: 38px;
 }
 
-.phone-input:active .icon-phone {
+.input-div:focus-within .icons {
     fill: rgba(77, 90, 229, 1);
 }
 
